@@ -1,0 +1,41 @@
+@media screen and (max-width: 768px ){
+    .mainTitulo{
+        font-size: 50px;
+    }
+    .menu-lista{
+        font-size: 25px;
+        margin-left: 35%;
+    }
+    .carrossel{
+        width: 100%;
+        margin-left: 200px;
+    }
+    .pEstilo{
+        font-size: 20px;
+    }
+    .blocoComentario{
+        width: 100%;
+        
+    }
+    .blocoComent{
+        display: flex;
+        justify-content: center;
+        margin-left: 70%;
+    }
+    .footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 167%;
+    }
+    .unicoBloco{
+        width: 75%;
+    }
+}
+/* @media screen and (max-width: 360) {
+    .pEstilo{
+        font-size: 25px;
+    }
+    .mainTitulo{
+
+    } */
