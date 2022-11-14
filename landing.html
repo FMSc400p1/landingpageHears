@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>H'ears</title>
+
+  <link rel="shortcut icon" href="./img/heart.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/swiper.css">
+  <link rel="stylesheet" href="./css/carrossel.css">
+  <link rel="stylesheet" href="./css/header.css">
+  <link rel="stylesheet" href="./css/footer.css">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+
+  <style>
+    .produtos-foto {
+      width: 350px;
+      height: 350px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin: 0 0 30px 10px;
+    }
+
+    .produtos {
+      background-image: linear-gradient(180deg,
+          rgb(255, 255, 255),
+          rgb(243, 255, 255),
+          rgb(255, 255, 255));
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: auto;
+      margin: 135px 0px;
+      border-radius: 50px;
+    }
+
+    .produtos h1 {
+      text-align: start;
+      margin-left: 30px;
+    }
+
+    .div-produtos {
+      display: flex;
+      text-align: start;
+      margin-left: 10px;
+      margin-bottom: 30px;
+    }
+
+    .textin {
+      width: 100%;
+      text-align: justify;
+      padding: 30px;
+
+    }
+
+    .pEstilo {
+      font-style: italic;
+      margin-top: 5px;
+      color: #1463f3;
+    }
+
+    .textoLado {
+      padding: 5px;
+      height: 450px;
+      width: 250px;
+      margin: 0 5px 0 15px;
+      color: #1463f3;
+    }
+
+    .inicioMain {
+      font-size: 22px;
+      text-align: center;
+      margin-bottom: 5px;
+    }
+
+    .abaComentario {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .blocoComentario {
+      padding: 20px;
+      height: 250px;
+      width: 80%;
+      background-image: linear-gradient(180deg,
+          rgb(243, 255, 255),
+          rgb(255, 255, 255),
+          rgb(243, 255, 255));
+      border-radius: 15px;
+      margin: 2%;
+      border: 1px solid #1463f3;
+    }
+
+    .fotoUser {
+      width: 150px;
+      height: 150px;
+      /* border-radius: 100%; */
+      background-color: grey;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      font-size: 16px;
+      margin-left: 30px;
+      margin-top: 10px;
+    }
+
+    .estrelas {
+      margin-top: 30px;
+      height: 50px;
+      width: 50px;
+      margin-left: -80px;
+      /* background-color: red; */
+    }
+
+    .fontestrelas{
+      font-size: 16px;
+    }
+
+    .fotoUser img{
+      margin-top: 60px;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: flex;
+      flex-direction: column;
+    }
+
+    #avalTitulo,
+    #produtoZona {
+      text-align: start;
+      margin-left: 20px;
+    }
+
+    #produtoZona {
+      color: #1463f3;
+    }
+
+    .zonaComentario {
+      border-radius: 12px;
+      margin-top: 8px;
+      height: 150px;
+      width: 700px;
+      margin-right: 100px;
+      background-color: rgba(207, 207, 207, 0.4);
+      text-align: justify;
+      padding: 10px 10px 0 10px ; 
+    }
+
+    .lojas{
+      width: 100%;
+      height: 100%;
+      background-color: rgba(156, 213, 254, 0.496);
+      display: flex;
+    }
+
+    .lojas-foto{
+      margin-left: 30px;
+      margin-top: 60px;
+      width: 350px;
+      height: 350px;
+      object-fit: cover;
+      display: flex;
+      flex-direction: column;
+      border-radius: 12px;
+    }
+
+  </style>
+
+</head>
+
+<body>
+  <header class="header" id="home">
+    <h1 class="mainTitulo" style="font-family: Open Sans; font-size: 40px;" id="msg">H'ears</h1>
+    <nav class="menu">
+      <ul class="menu-lista">
+        <li class="menu-item">
+          <a href="#prod">
+            <p>Produtos</p>
+          </a>
+        </li>
+
+
+        <li class="menu-item">
+          <a href="#lojas">
+            <p>Lojas</p>
+          </a>
+        </li>
+
+        <li class="menu-item">
+          <a href="#aval">Avaliações</a>
+        </li>
+
+        <li class="menu-item">
+          <a href="https://soloinfantil.com/wp-content/uploads/2015/06/festa-george-pig-infantil-16.jpg"> Ajuda </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="carrossel">
+    <div class="textoLado">
+      <p class="inicioMain">
+      <p style="font-family: 'Open Sans', sans-serif; font-size: 22px;"><i>Os melhores fones de ouvido a sua
+          disposição</i></p>
+      </p>
+    </div>
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="./img/earBud1.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="./img/earBud11.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="./img/earBud12.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="./img/earBud2.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="./img/earBud3.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="./img/earBud12.jpg" alt=""></div>
+      </div>
+    </div>
+    <div class="textoLado">
+      <p class="inicioMain">
+      <p style="font-family: 'Open Sans', sans-serif; font-size: 22px;margin-top: 200%; margin-left: 50px;"><i>Explore
+          as nossas opções</i></p>
+      </p>
+    </div>
+  </section>
+
+  <section class="produtos" id="prod">
+    <h1 id="produtoZona">Produtos</h1>
+    <div class="div-produtos">
+      <img src="./img/earBud1.jpg" alt="" class="produtos-foto">
+      <img src="./img/earBud2.jpg" alt="" class="produtos-foto">
+      <img src="./img/earBud12.jpg" alt="" class="produtos-foto">
+
+      <div class="textin">
+        <h2 style="color: #1463f3;">Headphones</h2>
+        <p class="pEstilo">O produto mais usado pela comunidade gamers, que jogam overwatch de moira
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+          Temporibus est corrupti quia rerum, ullam obcaecati sed vel dolor quod cum, repudiandae nisi at?
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam id voluptatum deleniti reprehenderit.
+          Voluptate officia reiciendis sint adipisci, ad laboriosam, corporis in
+          aspernatur ratione quo nam debitis odio eos sunt.
+        </p>
+      </div>
+    </div>
+    <div class="div-produtos">
+      <div class="textin">
+        <h2 style="color: #1463f3;">EarBuds Tradicionais</h2>
+        <p class="pEstilo">Além de retirar o uso de fiação, contem a versatilidade de uso em diversos meios e ambientes,
+          tanto
+          profissional quanto para o uso cotidiano
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+
+      <img src="./img/earBud11.jpg" alt="" class="produtos-foto">
+      <img src="./img/earBud21.jpg" alt="" class="produtos-foto">
+      <img src="./img/earBud22.jpg" alt="" class="produtos-foto">
+
+    </div>
+    <div class="div-produtos">
+      <img src="./img/earBud31.jpg" alt="" class="produtos-foto">
+      <div class="textin">
+        <h2 style="color: #1463f3;">Fones Bluetooth</h2>
+        <p class="pEstilo">Perfeitos periféricos sem precisar da conexão de fios ao seu smartphone, possui
+          conexão bluetooth e bateria de até 6 horas.</p>
+      </div>
+      <img src="./img/earBud32.jpg" alt="" class="produtos-foto">
+      <img src="./img/earBud3.jpg" alt="" class="produtos-foto">
+
+    </div>
+  </section>
+
+  <section id="#lojas">
+    <div class="lojas">
+      <h1>Lojas</h1>
+      <div class="div-lojas">
+        <img src="./img/americanas.jpg" alt="" class="lojas-foto">
+        <div class="textin">
+          <h2>Lojas Americanas</h2>
+          <p> Todo mundo vai!
+            <br>
+            Acesse pelo Maps: <a
+              href="https://www.google.com/maps?hl=pt-BR&rlst=f&lqi=Chdsb2phcyBkZSBmb25lIGRlIG91dmlkbxm2idvekpteQ0iDnKr6qqqAgAhSFwj-_ss7EPuA7pbkv87pVBoCcHQiAkJSWikQABABEAIQAxAEGAAYARgDIhdsb2phcyBkZSBmb25lIGRlIG91dmlkb2gBkgEQZGVwYXJ0bWVudF9zdG9yZaEBRN5VIWQMnsWhAfcCiTutMs32oQFg3WVf3aFeL6EBU8RFyEsl09ChAXyWepHCIS71qgEfEAEqGyIXbG9qYXMgZGUgZm9uZSBkZSBvdXZpZG8oDA&phdesc=yH7Ow1gSp_4&vet=12ahUKEwir5Kno-qb7AhUplJUCHZ5WAdoQ8UF6BAgDEFU..i&lei=ea9uY-vDKamo1sQPnq2F0A0&cs=1&um=1&ie=UTF-8&fb=1&gl=br&sa=X&geocode=KRm-QvCNC0gHMaXJFszQr_xg&daddr=Av.+Djalma+Batista,+2100+-+Nossa+Sra.+das+Gra%C3%A7as,+Manaus+-+AM,+69050-010">Clique
+              aqui</a>
+          </p>
+        </div>
+      </div>
+      <div class="div-lojas">
+        <img src="./img/vivo.jfif" alt="" class="lojas-foto">
+        <div class="textin">
+          <p>
+          <h2>Loja Vivo</h2> O clássico das operadora
+          <br>
+          Telefone: (92) 98405-8959
+          <br>
+          Acesse pelo Maps: <a
+            href="https://www.google.com/maps/dir//Avenida+Djalma+Batista,+482+2%C2%BA+Piso+-+Loja+276%2F277+-+Chapada,+Manaus+-+AM,+69050-902/@-3.094294,-60.0925997,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x926c1aa848dc74c1:0x16aec68f8cacbee6!2m2!1d-60.0225591!2d-3.0942963?hl=pt-BR">
+            Clique aqui</a>
+          </p>
+        </div>
+      </div>
+      <div class="div-lojas">
+        <img src="./img/infostore.jfif" alt="" class="lojas-foto">
+        <div class="textin">
+          <p>
+          <h2>Info Store</h2> A melhor loja não mais cara de Manaus também vende fone
+          <br>
+          Acesse pelo Maps: <a
+            href="https://www.google.com/maps/dir//Av.+Djalma+Batista,+482+-+Loja+357+-+Parque+Dez+de+Novembro,+Manaus+-+AM,+69050-010/@-3.094549,-60.0923735,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x926c1aa7d7a8535b:0x2aed0907669aef31!2m2!1d-60.0223329!2d-3.0945513?hl=pt-BR">Clique
+            aqui</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="avaliacoes" id="aval">
+    <h1 style="margin-left: 10px; color: #1463f3;">Comentários</h1>
+    <div class="blocoComentario">
+      <h1 id="avalTitulo">#adam1818dd</h1>
+      <div class="abaComentario">
+        <div class="fotoUser">
+          <img src="./img/fotovazia.jpg" alt="">
+          <h2 class="estrelas">⭐✰✰✰✰</h2>
+        </div>
+        
+        <div class="zonaComentario">
+          Achei os preços muitos altos, e as lojas são apenas americanas e sem serviço internacional!
+          além do mais, eu não entendi como que uma revendedora não tem outras opções de fones?!?!?!?!
+        </div>
+      </div>
+    </div>
+
+    <div class="blocoComentario">
+      <h1 id="avalTitulo">#floresalmeidarocha888</h1>
+      <div class="abaComentario">
+        <div class="fotoUser">
+          <img src="./img/fotovazia.jpg" alt="">
+          <h2 class="estrelas">⭐⭐✰✰✰</h2>
+        </div>
+        
+        <div class="zonaComentario">
+          Achei que as lojas eram todas aqui no Brasil, me deu vários problemas com o pessoal da entrega, 
+          fiquei quase achando que era golpe, não paravam de me dizer que o pedido está a caminho...muito irresponsável. 
+          Mas fiquei esperançosa sobre a qualidade do fone que acabei de comprar pra minhas duas filhas e meu marido.
+          Mas logo vieram sem carga e com partes arranhadas, fala sério, mas tirando isso, eles funcionam.
+          Se não fosse bluetoof, era melhor ter comprado no shopping aqui perto de casa! Decepcionada!!!
+        </div>
+      </div>
+    </div>
+
+    <div class="blocoComentario">
+      <h1 id="avalTitulo">#Ernest_Khalimov</h1>
+      <div class="abaComentario">
+        <div class="fotoUser">
+          <img src="./img/gigachad.jpg" alt="">
+          <h2 class="estrelas">⭐⭐⭐⭐⭐</h2>
+        </div>
+        
+        <div class="zonaComentario">
+          Fone sem fio, 6+ horas de uso e não sai quando estou me exercitando, simplesmente fabuloso!!!
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+
+    <div class="primeiraLinha">
+      <strong><p class="footer-msg">Landing site desenvolvido por: <i>@FMSC4</i></p></strong>
+    </div>
+
+    <div class="unicoBloco">
+      <div class="primeiroBloco">
+        <a href="#home"><p>Inicio</p></a>
+        <a href="#prod"><p>Produtos</p></a>
+        <a href="#aval"><p>Avaliações</p></a>
+      </div>
+    </div>
+
+
+
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+</body>
+
+</html>
