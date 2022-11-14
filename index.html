@@ -20,6 +20,7 @@
   <link rel="stylesheet" href="./css/carrossel.css">
   <link rel="stylesheet" href="./css/header.css">
   <link rel="stylesheet" href="./css/footer.css">
+  <link rel="stylesheet" href="css/responsivo.css">
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
 
@@ -34,9 +35,9 @@
 
     .produtos {
       background-image: linear-gradient(180deg,
-          rgb(255, 255, 255),
-          rgb(243, 255, 255),
-          rgb(255, 255, 255));
+      rgb(255, 255, 255),
+      rgb(243, 255, 255),
+      rgb(255, 255, 255));
       width: 100%;
       display: grid;
       grid-template-columns: repeat(1, 1fr);
@@ -86,19 +87,6 @@
     .abaComentario {
       display: flex;
       justify-content: space-between;
-    }
-
-    .blocoComentario {
-      padding: 20px;
-      height: 250px;
-      width: 80%;
-      background-image: linear-gradient(180deg,
-          rgb(243, 255, 255),
-          rgb(255, 255, 255),
-          rgb(243, 255, 255));
-      border-radius: 15px;
-      margin: 2%;
-      border: 1px solid #1463f3;
     }
 
     .fotoUser {
@@ -157,6 +145,19 @@
       padding: 10px 10px 0 10px ; 
     }
 
+    .blocoComentario {
+      padding: 20px;
+      height: 250px;
+      width: 80%;
+      background-image: linear-gradient(180deg,
+          rgb(243, 255, 255),
+          rgb(255, 255, 255),
+          rgb(243, 255, 255));
+      border-radius: 15px;
+      margin: 2%;
+      border: 1px solid #1463f3;
+    }
+
     .lojas{
       width: 100%;
       height: 100%;
@@ -179,14 +180,15 @@
       color: #1463f3;
       margin-left: 10px;
     }
-    
+
+
   </style>
 
 </head>
 
 <body>
   <header class="header" id="home">
-    <h1 class="mainTitulo" style="font-family: Open Sans; font-size: 40px;" id="msg">H'ears</h1>
+    <h1 class="mainTitulo" id="msg">H'ears</h1>
     <nav class="menu">
       <ul class="menu-lista">
         <li class="menu-item">
@@ -284,8 +286,8 @@
   </section>
 
   <section id="#lojas">
+    <h1 class="titleLojas">Lojas</h1>
     <div class="lojas">
-      <h1 class="titleLojas">Lojas</h1>
       <div class="div-lojas">
         <img src="./img/americanas.jpg" alt="" class="lojas-foto">
         <div class="textin">
@@ -326,63 +328,66 @@
     </div>
   </section>
 
-  <section class="avaliacoes" id="aval">
-    <h1 style="margin-left: 10px; color: #1463f3;">Comentários</h1>
-    <div class="blocoComentario">
-      <h1 id="avalTitulo">#adam1818dd</h1>
-      <div class="abaComentario">
-        <div class="fotoUser">
-          <img src="./img/pedroquintas.jpg" alt="" >
-          <h2 class="estrelas">⭐✰✰✰✰</h2>
-        </div>
-        
-        <div class="zonaComentario">
-          Achei os preços muitos altos, e as lojas são apenas americanas e sem serviço internacional!
-          além do mais, eu não entendi como que uma revendedora não tem outras opções de fones?!?!?!?!
+  <h1 style="margin-left: 10px; color: #1463f3;">Comentários</h1>
+  <div class="blocoComent">
+    <section class="avaliacoes" id="aval">
+      <div class="blocoComentario">
+        <h1 id="avalTitulo">#adam1818dd</h1>
+        <div class="abaComentario">
+          <div class="fotoUser">
+            <img src="./img/pedroquintas.jpg" alt="" >
+            <h2 class="estrelas">⭐✰✰✰✰</h2>
+          </div>
+          
+          <div class="zonaComentario">
+            Achei os preços muitos altos, e as lojas são apenas americanas e sem serviço internacional!
+            além do mais, eu não entendi como que uma revendedora não tem outras opções de fones?!?!?!?!
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="blocoComentario">
-      <h1 id="avalTitulo">#floresalmeidarocha888</h1>
-      <div class="abaComentario">
-        <div class="fotoUser">
-          <img src="./img/skyler.jpg" alt="">
-          <h2 class="estrelas">⭐⭐✰✰✰</h2>
-        </div>
-        
-        <div class="zonaComentario">
-          Achei que as lojas eram todas aqui no Brasil, me deu vários problemas com o pessoal da entrega, 
-          fiquei quase achando que era golpe, não paravam de me dizer que o pedido está a caminho...muito irresponsável. 
-          Mas fiquei esperançosa sobre a qualidade do fone que acabei de comprar pra minhas duas filhas e meu marido.
-          Mas logo vieram sem carga e com partes arranhadas, fala sério, mas tirando isso, eles funcionam.
-          Se não fosse bluetoof, era melhor ter comprado no shopping aqui perto de casa! Decepcionada!!!
+      <div class="blocoComentario">
+        <h1 id="avalTitulo">#floresalmeidarocha888</h1>
+        <div class="abaComentario">
+          <div class="fotoUser">
+            <img src="./img/skyler.jpg" alt="">
+            <h2 class="estrelas">⭐⭐✰✰✰</h2>
+          </div>
+          
+          <div class="zonaComentario">
+            Achei que as lojas eram todas aqui no Brasil, me deu vários problemas com o pessoal da entrega, 
+            fiquei quase achando que era golpe, não paravam de me dizer que o pedido está a caminho...muito irresponsável. 
+            Mas fiquei esperançosa sobre a qualidade do fone que acabei de comprar pra minhas duas filhas e meu marido.
+            Mas logo vieram sem carga e com partes arranhadas, fala sério, mas tirando isso, eles funcionam.
+            Se não fosse bluetoof, era melhor ter comprado no shopping aqui perto de casa! Decepcionada!!!
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="blocoComentario">
-      <h1 id="avalTitulo">#Ernest_Khalimov</h1>
-      <div class="abaComentario">
-        <div class="fotoUser">
-          <img src="./img/gigachad.jpg" alt="">
-          <h2 class="estrelas">⭐⭐⭐⭐⭐</h2>
-        </div>
-        
-        <div class="zonaComentario">
-          Fone sem fio, 6+ horas de uso e não sai quando estou me exercitando, simplesmente fabuloso!!!
+      <div class="blocoComentario">
+        <h1 id="avalTitulo">#Ernest_Khalimov</h1>
+        <div class="abaComentario">
+          <div class="fotoUser">
+            <img src="./img/gigachad.jpg" alt="">
+            <h2 class="estrelas">⭐⭐⭐⭐⭐</h2>
+          </div>
+          
+          <div class="zonaComentario">
+            Fone sem fio, 6+ horas de uso e não sai quando estou me exercitando, simplesmente fabuloso!!!
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+</div>
 
   <footer class="footer">
 
-    <div class="primeiraLinha">
-      <strong><p class="footer-msg">Landing site desenvolvido por: <i>@FMSC4</i></p></strong>
-    </div>
+
 
     <div class="unicoBloco">
+      <div class="primeiraLinha">
+        <strong><p class="footer-msg">Landing site desenvolvido por: <i>@FMSC4</i></p></strong>
+      </div>
       <div class="primeiroBloco">
         <a href="#home"><p>Inicio</p></a>
         <a href="#prod"><p>Produtos</p></a>
@@ -394,9 +399,10 @@
 
   </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script 
+  src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js">
+  </script>
 
-  <!-- Initialize Swiper -->
   <script>
     var swiper = new Swiper(".mySwiper", {
       spaceBetween: 30,
