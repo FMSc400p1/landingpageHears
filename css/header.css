@@ -1,0 +1,33 @@
+.header {
+    min-height: 10vh;
+    width: 100%;
+    color: #1463f3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .mainTitulo {
+    font-size: 32px;
+    margin-left: 25vh;
+    font-family: 'Open Sans';
+  }
+
+  .menu-lista {
+    display: flex;
+    list-style-type: none;
+    font-size: 16px;
+    align-items: center;
+  }
+
+  .menu-lista a {
+    text-decoration: none;
+  }
+
+  .menu-item {
+    padding: 10px 10px;
+    text-align: center;
+  }
+  .menu-item:hover{
+    background-color: rgba(164, 164, 255, 0.192);
+    border-radius:12px;
+  }
